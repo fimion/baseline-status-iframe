@@ -1,0 +1,25 @@
+:root{
+  font-size: 32px;
+  font-family: "Comic Sans MS", 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: normal;
+}
+
+button{
+  font-family: inherit;
+  font-size: inherit;
+  background-color: hotpink;
+  border: 5px outset indigo;
+  border-radius: 0.25em;
+  padding: 0.25em;
+}
+
+:root, body{
+  min-height: 100dvh;
+}
+
+body:has(baseline-status){
+  display:grid;
+  place-content: center;
+  padding: 0;
+  margin:0;
+}

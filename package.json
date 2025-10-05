@@ -1,0 +1,31 @@
+{
+  "name": "baseline-status-iframe",
+  "version": "1.0.0",
+  "description": "A custom version of the baseline-status custom element, designed to be used in an iframe",
+  "homepage": "https://github.com/fimion/baseline-status-iframe#readme",
+  "bugs": {
+    "url": "https://github.com/fimion/baseline-status-iframe/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimion/baseline-status-iframe.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Alex Riviere <fimion@gmail.com>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite",
+    "build": "vite build",
+    "optimize": "vite optimize",
+    "preview": "vite build && vite preview"
+  },
+  "dependencies": {
+    "@lit/task": "^1.0.3",
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.9"
+  }
+}

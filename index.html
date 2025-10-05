@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>baseline-status</title>
+  <link href="/css/style.css" rel="stylesheet" />
+  <script src="/js/baseline-status.js" type="module"></script>
+</head>
+<body>
+<baseline-status id="feature" featureId="customizable-select" open></baseline-status>
+<script type="module">
+  const query = new URLSearchParams(window.location.search);
+  if(query.has("featureId")){
+    const feature = document.getElementById("feature");
+    if(feature){
+      feature.setAttribute("featureId", query.get("featureId"));
+    }
+  }
+</script>
+</body>
+</html>
